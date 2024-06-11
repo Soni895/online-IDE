@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently -n 'server,client' -c 'red,green' \"npm run server\" \"npm run client\""
+  },
+  "author": "Aditya Harsh <geekyadi118@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bull": "^3.29.1",
+    "concurrently": "^6.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "font-awesome": "^4.7.0",
+    "mongoose": "^6.0.2",
+    "redis": "^3.1.2",
+    "uuid": "^8.3.2"
+  },
+  "repository": "git@github.com:adityaharsh2001/online-ide.git"
+}
